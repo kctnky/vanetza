@@ -20,9 +20,11 @@ extern "C" {
 
 /* Dependencies */
 typedef enum LongitudinalAccelerationValue {
-	LongitudinalAccelerationValue_pointOneMeterPerSecSquaredForward	= 1,
-	LongitudinalAccelerationValue_pointOneMeterPerSecSquaredBackward	= -1,
-	LongitudinalAccelerationValue_unavailable	= 161
+	LongitudinalAccelerationValue_pointOneMeterPerSecSquaredForward = 1,
+	LongitudinalAccelerationValue_pointOneMeterPerSecSquaredBackward = -1,
+	LongitudinalAccelerationValue_pointOneMillimeterPerSecSquaredForward = 1000,
+	LongitudinalAccelerationValue_pointOneMillimeterPerSecSquaredBackward = -1000,
+	LongitudinalAccelerationValue_unavailable = 161000
 } e_LongitudinalAccelerationValue;
 
 /* LongitudinalAccelerationValue */

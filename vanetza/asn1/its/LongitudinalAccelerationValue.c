@@ -21,7 +21,7 @@ LongitudinalAccelerationValue_constraint(const asn_TYPE_descriptor_t *td, const 
 	
 	value = *(const long *)sptr;
 	
-	if((value >= -160 && value <= 161)) {
+	if((value >= -160000 && value <= 161000)) {
 		/* Constraint check succeeded */
 		return 0;
 	} else {
@@ -37,10 +37,10 @@ LongitudinalAccelerationValue_constraint(const asn_TYPE_descriptor_t *td, const 
  * so here we adjust the DEF accordingly.
  */
 static asn_oer_constraints_t asn_OER_type_LongitudinalAccelerationValue_constr_1 CC_NOTUSED = {
-	{ 2, 0 }	/* (-160..161) */,
+	{ 4, 0 }	/* (-160000..161000) */,
 	-1};
 asn_per_constraints_t asn_PER_type_LongitudinalAccelerationValue_constr_1 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 9,  9, -160,  161 }	/* (-160..161) */,
+	{ APC_CONSTRAINED,	 33,  33, -160000,  161000 }	/* (-160000..161000) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
